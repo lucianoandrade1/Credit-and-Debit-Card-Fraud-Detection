@@ -1,6 +1,5 @@
 # Credit-Card-Fraud-Detection-Capstone-Project
 
-
 Requirements
 
 Choose a subject area that interests you, identify potential problems within it you would like to address, and seek out potential datasets you could build solutions on. Address the following writing prompts with a paragraph each.
