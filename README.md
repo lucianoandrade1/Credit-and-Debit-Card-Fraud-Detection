@@ -18,8 +18,7 @@ Using Machine Learning for credit card fraud detection is an opportunity to crea
 
 **The User**: Who experiences these problems? How would they benefit from the outcomes of your project?
 
-Stakeholders, including issuers, banks, payment processors, and merchants, constantly seek ways to leverage multiple technological advancements to better align with their end-users preferences. In this context, they are always looking for ways to prevent fraud.
-As such, when a company commits fraud and incurs a significant loss, all stakeholders are directly or indirectly impacted. In some cases, employees may lose their jobs, consumers cannot access commodities, and surrounding communities may lose a significant source of tax revenue.
+Stakeholders, including issuers, banks, payment processors, and merchants, constantly seek ways to leverage multiple technological advancements to better align with their end-users preferences. In this context, they are always looking for ways to prevent fraud. As such, when a company commits fraud and incurs a significant loss, all stakeholders are directly or indirectly impacted. In some cases, employees may lose their jobs, consumers cannot access commodities, and surrounding communities may lose a significant source of tax revenue.
 
 **The Big Idea**: How can machine learning bring solutions to these areas?
 
