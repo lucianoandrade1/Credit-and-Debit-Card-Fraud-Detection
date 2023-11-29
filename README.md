@@ -30,6 +30,8 @@ The problem of credit card fraud detection includes modeling past credit card tr
 
 The FBI said it received 88,262 complaints overall from victims of fraud in the over-60 group last year. These sufferers reported $3.1 billion in losses, up almost $1 billion from 2021. The report found that the average dollar loss per victim totaled $35,101, with 5,456 victims losing more than $100,000.
 
+In 2022, the Canadian Anti-Fraud Centre received fraud and cybercrime reports totaling $530 million in victim losses—nearly a 40% increase from the unprecedented $380 million losses in 2021. Unfortunately, the increased reporting doesn't represent the actual financial loss, as the Canadian Anti-Fraud Centre estimates that only 5 to 10% of people report fraud.
+
 **The Data**: Identify several possible datasets in this subject area and describe them at a high level. Include references. If you struggle to find more than one or two datasets, this might mean a Data Science approach to the problem will be challenging. Check in with your Educator.
 
 **The Alternative**: In a few sentences, summarise a problem in an alternative subject area that also interests you.
