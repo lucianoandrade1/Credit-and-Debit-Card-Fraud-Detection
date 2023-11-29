@@ -16,7 +16,13 @@ It's not always straightforward to agree on what fraud means. Regardless of how 
 
 **The User**: Who experiences these problems? How would they benefit from the outcomes of your project?
 
-**The Big Idea**: How can machine learning bring solutions to these areas? Research how other people have approached the problem previously. Refer to the "Intro to Capstone" slides on synapse for an overview of different machine learning approaches.
+**The Big Idea**: How can machine learning bring solutions to these areas?
+
+The problem of credit card fraud detection includes modeling past credit card transactions with knowledge of those that turned out to be fraud. A classification machine learning model can be used to identify whether a new transaction is fraudulent or not. The goal is to maximize the detection of fraudulent transactions while minimizing fraud misclassifications.
+
+Research how other people have approached the problem previously. Refer to the "Intro to Capstone" slides on synapse for an overview of different machine learning approaches.
+
+
 
 **The Impact**: What societal or business value do you anticipate your project to add? If possible, try to quantify the scale of the problem (in dollars, in CO2, in time spent, ...)
 
