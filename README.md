@@ -34,7 +34,7 @@ In 2022, the Canadian Anti-Fraud Centre received fraud and cybercrime reports to
 
 **The Data**: Identify several possible datasets in this subject area and describe them at a high level. Include references. If you struggle to find more than one or two datasets, this might mean a Data Science approach to the problem will be challenging. Check in with your Educator.
 
-I received two datasets with anonymized data from a Brazilian bank. The dataset 1 (Cards.csv) has 762 rows and 50 columns. I still have to check the dataset dictionaries to get more familiar with the data. The dataset 2 has 98052 rows, labeled with 0 (97937 genuine transactions) and labeled with 1 (115 fraudulent transactions). The datasets are in the Credit-Card-Fraud-Detection-Capstone-Project GitHub repository data folder.
+I received two datasets with anonymized data from former classmates from a Brazilian retail store. The dataset 1 (Cards.csv) has 762 rows and 50 columns. I still have to check the dataset dictionaries to get more familiar with the data. The dataset 2 has 98052 rows, labeled with 0 (97937 genuine transactions) and labeled with 1 (115 fraudulent transactions). The datasets are in the Credit-Card-Fraud-Detection-Capstone-Project GitHub repository data folder.
 
 **The Alternative**: In a few sentences, summarise a problem in an alternative subject area that also interests you.
 
