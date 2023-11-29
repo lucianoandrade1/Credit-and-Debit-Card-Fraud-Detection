@@ -38,4 +38,4 @@ I received two datasets with anonymized data from a Brazilian bank. The dataset 
 
 **The Alternative**: In a few sentences, summarise a problem in an alternative subject area that also interests you.
 
-
+Another area that attracts me is Market Basket Analysis.
