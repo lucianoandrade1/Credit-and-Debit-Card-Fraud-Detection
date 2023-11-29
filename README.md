@@ -14,6 +14,8 @@ Within it, what challenges or opportunities could your project address?
 
 It's not always straightforward to agree on what fraud means. Regardless of how you define fraud, most payments are not fraudulent. Most merchants aren't experts at estimating the business impact of fraud.
 
+Using Machine Learning for credit card fraud detection is an opportunity to create more efficient systems to avoid fraud. These systems will prevent fraud and avoid accusing legitimate purchases of fraud. This scenario will give the merchants more credibility, generating higher profits.
+
 **The User**: Who experiences these problems? How would they benefit from the outcomes of your project?
 
 **The Big Idea**: How can machine learning bring solutions to these areas?
