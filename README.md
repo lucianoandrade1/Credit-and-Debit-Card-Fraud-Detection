@@ -18,6 +18,9 @@ Using Machine Learning for credit card fraud detection is an opportunity to crea
 
 **The User**: Who experiences these problems? How would they benefit from the outcomes of your project?
 
+Stakeholders, including issuers, banks, payment processors, and merchants, constantly seek ways to leverage multiple technological advancements to better align with their end-users preferences. In this context, they are always looking for ways to prevent fraud.
+As such, when a company commits fraud and incurs a significant loss, all stakeholders are directly or indirectly impacted. In some cases, employees may lose their jobs, consumers cannot access commodities, and surrounding communities may lose a significant source of tax revenue.
+
 **The Big Idea**: How can machine learning bring solutions to these areas?
 
 The problem of credit card fraud detection includes modeling past credit card transactions with knowledge of those that turned out to be fraud. A classification machine learning model can be used to identify whether a new transaction is fraudulent or not. The goal is to maximize the detection of fraudulent transactions while minimizing fraud misclassifications.
