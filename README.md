@@ -34,8 +34,10 @@ In 2022, the Canadian Anti-Fraud Centre received fraud and cybercrime reports to
 
 **The Data**: Identify several possible datasets in this subject area and describe them at a high level. Include references. If you struggle to find more than one or two datasets, this might mean a Data Science approach to the problem will be challenging. Check in with your Educator.
 
-I received two datasets with anonymized data from former classmates from a Brazilian retail store. The dataset 1 (Cards.csv) has 762 rows and 50 columns. I am currently checking the dataset dictionaries to familiarize myself with the data. The dataset 2 has 98052 rows, labeled with 0 (97937 genuine transactions) and labeled with 1 (115 fraudulent transactions). The datasets are in the Credit-Card-Fraud-Detection-Capstone-Project GitHub repository data folder.
+I received two datasets with anonymized data from former classmates from a Brazilian retail store. The dataset 1 (Cards.csv) has 762 rows and 50 columns. I am currently checking the dataset dictionaries to familiarize myself with the data. The dataset 2 has 98052 rows and 30 columns, labeled with 0 (97937 genuine transactions) and labeled with 1 (115 fraudulent transactions). The datasets are in the Credit-Card-Fraud-Detection-Capstone-Project GitHub repository data folder.
 
 **The Alternative**: In a few sentences, summarise a problem in an alternative subject area that also interests you.
 
-Another area that attracts me is Market Basket Analysis.
+Another area that attracts me is Association Rules.
+
+An alternative would be to work with the Vancouver police department's crime data. This data is up to date, and one can discover association rules among types of crimes, Vancouver neighborhoods, days of the week, and time of day when different types of crimes tend to occur more or less frequently.
