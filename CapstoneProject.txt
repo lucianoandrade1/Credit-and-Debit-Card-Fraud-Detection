@@ -1,0 +1,96 @@
+#Let's devide the data in train (80%) and test (20%) datasets.
+X_train, X_test, y_train, y_test = train_test_split(x_rus, y_rus, test_size=0.20, random_state=17)
+
+#One can perform the data scaling after splitting the data in train and test. In this case, I used the Standard Scaler.
+my_standard_scaler = StandardScaler()
+
+#I scaled only the numeric data and kept the categorical data as it was.
+my_standard_scaler.fit(X_train[['TransactionAmt','card1','addr1','addr2', 
+                                'C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14']])
+
+X_trainScaledfraud = pd.DataFrame(my_standard_scaler.transform(X_train[['TransactionAmt','card1','addr1','addr2',
+                                                                       'C1','C2','C3','C4','C5','C6','C7','C8','C9',
+                                                                        'C10','C11','C12','C13','C14']])).reset_index()
+
+X_trainTmpFraud = X_train[['ProductCD','card4','card6','P_emaildomain']].reset_index()
+
+X_train=pd.concat([X_trainScaledfraud, X_trainTmpFraud], ignore_index=True, axis=1)
+
+X_train.columns = ['index','TransactionAmt','card1','addr1','addr2', 
+                   'C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14',
+                   'index1', 'ProductCD','card4','card6','P_emaildomain']
+
+X_train=X_train[['TransactionAmt','card1','addr1','addr2', 
+                 'C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14',
+                 'ProductCD','card4','card6','P_emaildomain']]
+				 
+				 
+#Now, let's perform the test set scaling using the exact parameters of the train set scaler. 
+X_testScaledfraud = pd.DataFrame(my_standard_scaler.transform(X_test[['TransactionAmt','card1','addr1','addr2',
+                                                                     'C1','C2','C3','C4','C5','C6','C7','C8',
+                                                                      'C9','C10','C11','C12','C13','C14']])).reset_index()
+
+X_testTmpFraud = X_test[['ProductCD','card4','card6','P_emaildomain']].reset_index()
+
+X_test=pd.concat([X_testScaledfraud, X_testTmpFraud], ignore_index=True, axis=1)
+
+X_test.columns = ['index','TransactionAmt','card1','addr1','addr2', 
+                  'C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14',
+                  'index1', 'ProductCD','card4','card6','P_emaildomain']
+
+X_test=X_test[['TransactionAmt','card1','addr1','addr2', 
+               'C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14',
+               'ProductCD','card4','card6','P_emaildomain']]
+			   
+			   
+#Instead of performing attribute selection manually, I applied an algorithm to perform this task based on the variable's importance.
+from sklearn.model_selection import StratifiedKFold
+from yellowbrick.model_selection import RFECV
+
+cv = StratifiedKFold(5)
+visualizer = RFECV(tree.DecisionTreeClassifier(), cv=cv, scoring='f1_weighted')
+
+visualizer.fit(X_train, y_train)
+visualizer.show()
+
+
+#Getting the support, I know the features selected by the model selector.
+mask = visualizer.get_support()
+
+features = np.array(['TransactionAmt','card1','addr1','addr2', 
+                     'C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14',
+                     'ProductCD','card4','card6','P_emaildomain'])
+best_features = features[mask]
+
+print("Selected best: ", best_features.shape[0])
+print(features[mask])
+
+
+#Now, I use only the selected attributes in my machine-learning model.
+BestX_train = X_train[list(features[mask])]
+
+BestX_test = X_test[list(features[mask])]
+
+
+#Configure the cross-validation procedure
+cv_inner = KFold(n_splits=3, shuffle=True, random_state=1)
+#Define the model
+model = tree.DecisionTreeClassifier(random_state=0)
+#Define search space
+space = dict()
+space['max_depth'] = [5, 10, 15]
+#Define search
+search = GridSearchCV(model, space, scoring='accuracy', n_jobs=1, cv=cv_inner, refit=True)
+#Configure the cross-validation procedure
+cv_outer = KFold(n_splits=10, shuffle=True, random_state=1)
+#Execute the nested cross-validation
+scores = cross_val_score(search, BestX_train, y_train, scoring='accuracy', cv=cv_outer, n_jobs=-1)
+#Report performance
+print('Accuracy: %.3f (%.3f)' % (np.mean(scores), np.std(scores)))
+
+#Let's check the performance of the model regarding the test set.
+clf = search.fit(BestX_train, y_train)
+predTree = clf.predict(BestX_test)
+print(f"{accuracy_score(y_test, predTree):.2%}")
+
+clf.best_params_
