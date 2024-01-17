@@ -41,6 +41,6 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
 - M1-M9: match, such as names on card and address, etc.
 - Vxxx: Vesta engineered rich features, including ranking, counting, and other entity relations. For example, how many times the payment card associated with a IP and email or address appeared in 24 hours time range, etc. All Vesta features were derived as numerical. Some of them are count of orders within a clustering, a time-period or condition, so the value is finite and has ordering (or ranking).
 
-Flow Chart  <a class="anchor" id="flowchart"></a>
+## Flow Chart  <a class="anchor" id="flowchart"></a>
 
 ![Project Flowchart](CapstoneProjectStages.png)
