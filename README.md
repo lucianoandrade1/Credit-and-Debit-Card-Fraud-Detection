@@ -1,6 +1,9 @@
 # Credit-Card-Fraud-Detection-Capstone-Project
 
-## Introduction
+- [Introduction](#introduction)
+- [Flow Chart](#flowchart)
+
+## Introduction <a class=\"anchor\" id=\"introduction\"></a>
 
 **The Problem area**: Credit card fraud occurs when a customer uses a third party's credit card or information to make unauthorized purchases or cash advances. Credit card fraud happens both online and in physical stores. Merchants can avoid problems and bad reputations when they identify fraudulent use of credit cards in their payment environment. Credit card fraud detection is critical for companies to safeguard their customers' purchases and funds by detecting fraud before or as it occurs.
 
@@ -37,5 +40,7 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
 - D1-D15: timedelta, such as days between previous transaction, etc.
 - M1-M9: match, such as names on card and address, etc.
 - Vxxx: Vesta engineered rich features, including ranking, counting, and other entity relations. For example, how many times the payment card associated with a IP and email or address appeared in 24 hours time range, etc. All Vesta features were derived as numerical. Some of them are count of orders within a clustering, a time-period or condition, so the value is finite and has ordering (or ranking).
+
+Flow Chart <a class=\"anchor\" id=\"flowchart\"></a>
 
 ![Project Flowchart](CapstoneProjectStages.png)
