@@ -2,6 +2,7 @@
 
 - [Introduction](#introduction)
 - [Flow Chart](#flowchart)
+- [Project Organization](#projectorg)
 
 ## Introduction  <a class="anchor" id="introduction"></a>
 
@@ -44,3 +45,27 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
 ## Flow Chart  <a class="anchor" id="flowchart"></a>
 
 ![Project Flowchart](CapstoneProjectStages.png)
+
+## Project Organization   <a class="anchor" id="projectorg"></a>
+- Data Aquisition:
+- Exploratory data analysis:
+    * Total amount purchase per month:
+    * Total count of transactions:
+    * Product transaction distribution:
+    * Cards brands distribution:
+    * Cards Types distribution:
+    * Cards brands distribution by transaction type:
+    * Cards distribution by transaction type:
+    * Average amount purchase:
+    * Purchase distribution by email address:
+- Handling Missing Values:
+- Features correlation:
+- Dummy Variables:
+- Data balancing:
+- Feature Selection:
+- Fraud Classification:
+    * Decision Trees models:
+    * Random Forests models:
+    * Suport Vector Machines models:
+    * AdaBoost model:
+- Conclusions:
