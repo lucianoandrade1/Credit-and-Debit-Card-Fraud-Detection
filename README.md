@@ -89,8 +89,21 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
     After to balance the data, one can perform feature selection. For this task, one chose the Recursive feature elimination with cross-validation to select features. This technique performs recursive feature elimination in a cross-validation loop to find the optimal number of features. Given an external estimator that assigns weights to features, recursive feature elimination aims to select features by recursively considering smaller and smaller sets of features. First, it trains the estimator on the initial set of features, and each feature's importance is obtained either through any specific attribute or callable. Then, it prunes the most minor essential features from the current features. That procedure is recursively repeated on the pruned set until it reaches the desired number of features.
 
 - Fraud Classification:
+
+    This prokect section presents some baseline models to set the stage for advanced modeling in the future project step. One can see the performance of four models: Decision Trees, Random Forests, Adaboost, and Support Vector Machines. A feature selection is set for all models using a recursive feature elimination with cross-validation based on the Random Forests classifier. Next, a pipeline is designed with these steps: feature selection, feature scaling, model hyperparameters optimization, and training. To articulate a model evaluation, a performance metric report for each model is presented with accuracy, precision, recall, and f1-score.
+
     * Decision Trees models:
+
+        The Decision Trees performance was:
+
+            Accuracy equals to 74%.
+            Precision equals 72% for legitimate class and 77% for fraudulent class.
+            R  ecall equals 78% for genuine class and 70% for fraudulent class.
+            F1-score equals 75% for the genuine class and 73% for the fraudulent class.
+
     * Random Forests models:
     * Suport Vector Machines models:
     * AdaBoost model:
+
+
 - Conclusions:
