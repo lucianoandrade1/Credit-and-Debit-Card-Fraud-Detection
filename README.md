@@ -51,7 +51,7 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
 
 ## Project Organization   <a class="anchor" id="projectorg"></a>
 
-- Exploratory data analysis:
+1. Exploratory data analysis:
 
     Using Altair visualization package, the project exploratory data analysis (EDA) was employed to analyze and investigate the fraud data set and summarize its main characteristics. It will help to determine how best to manipulate data sources to get the necessary answers, making it possible to discover patterns, spot anomalies, or check assumptions. The EDA step was used to see what data can reveal beyond the formal modeling or hypothesis testing task and provide a better understanding of data set variables and their relationships. It will also assist in determining if the statistical techniques I have to consider for data analysis to be appropriate.
     The primary purpose of the following EDA is to help look at data before making any assumptions. It can help identify apparent errors, better understand patterns within the data, detect outliers or abnormal events, and find exciting relations among the variables. Once this EDA is complete and insights are drawn, its features can be used for ML classification modeling.
@@ -68,31 +68,31 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
         - Average amount purchase;
         - Purchase distribution by email address;
 
-- Handling Missing Values:
+2. Handling Missing Values:
 
     The dataset under analysis has 394 fields with relevant information about card transactions (purchases). Unfortunately, several fields are formed by thousands of missing values. So far, the strategy chosen to deal with the missing values is to drop them. Fortunately, the remaining fields are far enough to continue the analysis and to perform data balance and ML classification.
 
-- Features correlation:
+3. Features correlation:
 
     A heatmap was designed to show the correlation among the most relevant independent variables. The highest correlation is between ProductCD and card6, but even in this case the correlation is low (-0.39). High positive correlation value is near 1.0 and high negative correlation value is near -1.0. The selected fields are not highly correlated.
 
-- Dummy Variables:
+4. Dummy Variables:
 
     There are four categorical fields in the analyzed dataset. Therefore, it is necessary to create dummy variables with them. Each field was converted into as many 0 and 1 variables as there are different values. The columns in the output were named according to the values in the original fields and prepended to the field's values. For now, It was considered just three fields. The P_emaildomain field will be included in a further version of the project.
 
-- Data balancing:
+5. Data balancing:
 
     The imbalanced datasets are a intrinsic characteristic of the problem of credit card fraud detection. One can see that the fraud dataset is highly imbalanced. The issue presents much more legitimate transactions than fraudulent transactions. It is not different in this case, so we must use a technique to balance the data. As the quantity of data is enough, one can use the under-sampling technique. After this process, the remaining data has over 10 thousand legitimate and fraudulent transactions.
 
-- Feature Selection:
+6. Feature Selection:
 
     After to balance the data, one can perform feature selection. For this task, one chose the Recursive feature elimination with cross-validation to select features. This technique performs recursive feature elimination in a cross-validation loop to find the optimal number of features. Given an external estimator that assigns weights to features, recursive feature elimination aims to select features by recursively considering smaller and smaller sets of features. First, it trains the estimator on the initial set of features, and each feature's importance is obtained either through any specific attribute or callable. Then, it prunes the most minor essential features from the current features. That procedure is recursively repeated on the pruned set until it reaches the desired number of features.
 
-- Fraud Classification:
+7. Fraud Classification:
 
     This prokect section presents some baseline models to set the stage for advanced modeling in the future project step. One can see the performance of four models: Decision Trees, Random Forests, Adaboost, and Support Vector Machines. A feature selection is set for all models using a recursive feature elimination with cross-validation based on the Random Forests classifier. Next, a pipeline is designed with these steps: feature selection, feature scaling, model hyperparameters optimization, and training. To articulate a model evaluation, a performance metric report for each model is presented with accuracy, precision, recall, and f1-score.
 
-    * Decision Trees models:
+    - Decision Trees models:
 
         The Decision Trees performance was:
 
@@ -101,7 +101,7 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
             R  ecall equals 78% for genuine class and 70% for fraudulent class.
             F1-score equals 75% for the genuine class and 73% for the fraudulent class.
 
-    * Random Forests models:
+    - Random Forests models:
 
             The Random Forests performance was:
 
@@ -110,7 +110,7 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
             Recall equals 79% for genuine class and 65% for fraudulent class.
             F1-score equals 74% for the genuine class and 70% for the fraudulent class.
 
-    * Suport Vector Machines models:
+    - Suport Vector Machines models:
 
             The Support Vector Machines performance was:
 
@@ -119,7 +119,7 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
             Recall equals 81% for genuine class and 64% for fraudulent class.
             F1-score equals 74% for the genuine class and 70% for the fraudulent class.
 
-    * AdaBoost model:
+    - AdaBoost model:
 
             The Adaboost performance was:
 
@@ -128,6 +128,6 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
             Recall equals 78% for genuine class and 79% for fraudulent class.
             F1-score equals 78% for the genuine class and 78% for the fraudulent class.
 
-- Conclusions:
+8. Conclusions:
 
     The data was investigated by checking for data unbalancing, visualizing the features, checking the null values, and understanding the relationship between different features. The data were split into train and test sets and scaled, and a feature selection technique based on feature importance was employed and evaluated for use in further pipelines. The hyperparameters were prepared for optimization, and a pipeline was created for each model with feature selection, scaling, hyperparameters tunning, and classification steps. The performance of Decision Trees, Random Forests, and Support Vector Machines are very similar. However, Adaboost ensemble machine learning models present the general best performance compared to all analyzed models. Another work that will be completed in the future is using neural nets to see if we could further improve the model results.
