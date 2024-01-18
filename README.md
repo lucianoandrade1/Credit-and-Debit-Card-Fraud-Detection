@@ -70,9 +70,12 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
 
 - Handling Missing Values:
 
-The dataset under analysis has 394 fields with relevant information about card transactions (purchases). Unfortunately, several fields are formed by thousands of missing values. So far, the strategy chosen to deal with the missing values is to drop them. Fortunately, the remaining fields are far enough to continue the analysis and to perform data balance and ML classification.
+    The dataset under analysis has 394 fields with relevant information about card transactions (purchases). Unfortunately, several fields are formed by thousands of missing values. So far, the strategy chosen to deal with the missing values is to drop them. Fortunately, the remaining fields are far enough to continue the analysis and to perform data balance and ML classification.
 
 - Features correlation:
+
+    A heatmap was designed to show the correlation among the most relevant independent variables. The highest correlation is between ProductCD and card6, but even in this case the correlation is low (-0.39). High positive correlation value is near 1.0 and high negative correlation value is near -1.0. The selected fields are not highly correlated.
+
 - Dummy Variables:
 - Data balancing:
 - Feature Selection:
