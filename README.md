@@ -102,8 +102,32 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
             F1-score equals 75% for the genuine class and 73% for the fraudulent class.
 
     * Random Forests models:
+
+            The Random Forests performance was:
+
+            Accuracy equals to 72%.
+            Precision equals 69% for the legitimate class and 76% for the fraudulent class.
+            Recall equals 79% for genuine class and 65% for fraudulent class.
+            F1-score equals 74% for the genuine class and 70% for the fraudulent class.
+
     * Suport Vector Machines models:
+
+            The Support Vector Machines performance was:
+
+            Accuracy equals to 72%.
+            Precision equals 69% for the legitimate class and 77% for the fraudulent class.
+            Recall equals 81% for genuine class and 64% for fraudulent class.
+            F1-score equals 74% for the genuine class and 70% for the fraudulent class.
+
     * AdaBoost model:
 
+            The Adaboost performance was:
+
+            Accuracy equals to 78%.
+            Precision equals 78% for the legitimate class and 78% for the fraudulent class.
+            Recall equals 78% for genuine class and 79% for fraudulent class.
+            F1-score equals 78% for the genuine class and 78% for the fraudulent class.
 
 - Conclusions:
+
+    The data was investigated by checking for data unbalancing, visualizing the features, checking the null values, and understanding the relationship between different features. The data were split into train and test sets and scaled, and a feature selection technique based on feature importance was employed and evaluated for use in further pipelines. The hyperparameters were prepared for optimization, and a pipeline was created for each model with feature selection, scaling, hyperparameters tunning, and classification steps. The performance of Decision Trees, Random Forests, and Support Vector Machines are very similar. However, Adaboost ensemble machine learning models present the general best performance compared to all analyzed models. Another work that will be completed in the future is using neural nets to see if we could further improve the model results.
