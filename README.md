@@ -1,6 +1,7 @@
 # Credit-Card-Fraud-Detection-Capstone-Project
 
 - [Introduction](#introduction)
+- [Data aquisition](#data)
 - [Flow Chart](#flowchart)
 - [Project Organization](#projectorg)
 
@@ -26,6 +27,8 @@ The FBI said it received 88,262 complaints overall from victims of fraud in the 
 
 In 2022, the Canadian Anti-Fraud Centre received fraud and cybercrime reports totaling $530$ million in victim losses—nearly a 40\% increase from the unprecedented $380$ million losses in 2021. Unfortunately, the increased reporting doesn't represent the actual financial loss, as the Canadian Anti-Fraud Centre estimates that only 5 to 10\% of people report fraud.
 
+Data Aquisition:  <a class="anchor" id="data"></a>
+
 **The Data**: Identify several possible datasets in this subject area and describe them at a high level. Include references. If you struggle to find more than one or two datasets, this might mean a Data Science approach to the problem will be challenging. Check in with your Educator.
 
 The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will be used in the Brainstation capstone project were found in the IEEE-CIS Fraud Detection Kaggle's competition. The competition is currently closed, so I don't have access to the submissions. The data is formed by 590,540 transactions divided in 569,877 genuine transaction and 20,663 fraudulent transactions. The transactions contains money transfer and also other gifting goods and service, like you booked a ticket for others, etc. The dataset also has 394 fields as following:
@@ -47,7 +50,7 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
 ![Project Flowchart](CapstoneProjectStages.png)
 
 ## Project Organization   <a class="anchor" id="projectorg"></a>
-- Data Aquisition:
+
 - Exploratory data analysis:
     * Total amount purchase per month:
     * Total count of transactions:
