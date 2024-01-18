@@ -77,8 +77,17 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
     A heatmap was designed to show the correlation among the most relevant independent variables. The highest correlation is between ProductCD and card6, but even in this case the correlation is low (-0.39). High positive correlation value is near 1.0 and high negative correlation value is near -1.0. The selected fields are not highly correlated.
 
 - Dummy Variables:
+
+    There are four categorical fields in the analyzed dataset. Therefore, it is necessary to create dummy variables with them. Each field was converted into as many 0 and 1 variables as there are different values. The columns in the output were named according to the values in the original fields and prepended to the field's values. For now, It was considered just three fields. The P_emaildomain field will be included in a further version of the project.
+
 - Data balancing:
+
+    The imbalanced datasets are a intrinsic characteristic of the problem of credit card fraud detection. One can see that the fraud dataset is highly imbalanced. The issue presents much more legitimate transactions than fraudulent transactions. It is not different in this case, so we must use a technique to balance the data. As the quantity of data is enough, one can use the under-sampling technique. After this process, the remaining data has over 10 thousand legitimate and fraudulent transactions.
+
 - Feature Selection:
+
+    After to balance the data, one can perform feature selection. For this task, one chose the Recursive feature elimination with cross-validation to select features. This technique performs recursive feature elimination in a cross-validation loop to find the optimal number of features. Given an external estimator that assigns weights to features, recursive feature elimination aims to select features by recursively considering smaller and smaller sets of features. First, it trains the estimator on the initial set of features, and each feature's importance is obtained either through any specific attribute or callable. Then, it prunes the most minor essential features from the current features. That procedure is recursively repeated on the pruned set until it reaches the desired number of features.
+
 - Fraud Classification:
     * Decision Trees models:
     * Random Forests models:
