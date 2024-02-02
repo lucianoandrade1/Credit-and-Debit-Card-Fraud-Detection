@@ -1,4 +1,4 @@
-# Credit-Card-Fraud-Detection-Capstone-Project
+# Credit-and-Debit-Card-Fraud-Detection-Capstone-Project
 
 - [Introduction](#introduction)
 - [Data aquisition](#data)
