@@ -7,9 +7,9 @@
 
 ## Introduction  <a class="anchor" id="introduction"></a>
 
-![Credit and Debit Card Fraud Detection EDA](Credit-Card-Fraud-Detection-EDA.ipynb)
-![Credit and Debit Card Fraud Detection Feature Engineering](Credit-Card-Fraud-Detection-Feature-Engineering.ipynb)
-![Credit and Debit Card Fraud Detection Modeling](Credit-Card-Fraud-Detection-Modeling.ipynb)
+- [Credit and Debit Card Fraud Detection EDA](Credit-Card-Fraud-Detection-EDA.ipynb)
+- [Credit and Debit Card Fraud Detection Feature Engineering](Credit-Card-Fraud-Detection-Feature-Engineering.ipynb)
+- [Credit and Debit Card Fraud Detection Modeling](Credit-Card-Fraud-Detection-Modeling.ipynb)
 
 **The Problem area**: Credit card fraud occurs when a customer uses a third party's credit card or information to make unauthorized purchases or cash advances. Credit card fraud happens both online and in physical stores. Merchants can avoid problems and bad reputations when they identify fraudulent use of credit cards in their payment environment. Credit card fraud detection is critical for companies to safeguard their customers' purchases and funds by detecting fraud before or as it occurs.
 
