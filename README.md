@@ -99,7 +99,7 @@ These three files are responsible by the following:
 
 7. Fraud Classification:
 
-    This prokect section presents some baseline models to set the stage for advanced modeling in the future project step. One can see the performance of four models: Decision Trees, Random Forests, Adaboost, and Support Vector Machines. A feature selection is set for all models using a recursive feature elimination with cross-validation based on the Random Forests classifier. Next, a pipeline is designed with these steps: feature selection, feature scaling, model hyperparameters optimization, and training. To articulate a model evaluation, a performance metric report for each model is presented with accuracy, precision, recall, and f1-score.
+    This project section presents the models for advanced modeling. One can see the performance of four models: Decision Trees, Random Forests, Adaboost, Support Vector Machines, and Artificial Neural Networks. A feature selection is set for all models using a recursive feature elimination with cross-validation based on the Random Forests classifier. Next, a pipeline is designed with these steps: feature selection, feature scaling, model hyperparameters optimization, and training. To articulate a model evaluation, a performance metric report for each model is presented with accuracy, precision, recall, and f1-score.
 
     - Decision Trees models:
 
@@ -136,6 +136,16 @@ These three files are responsible by the following:
             Precision equals 78% for the legitimate class and 78% for the fraudulent class.
             Recall equals 78% for genuine class and 79% for fraudulent class.
             F1-score equals 78% for the genuine class and 78% for the fraudulent class.
+
+    - Artificial Neural Networks:
+
+            The ANN performance was:
+
+            Accuracy equals to 74%.
+            Precision equals 71% for the legitimate class and 78% for the fraudulent class.
+            Recall equals 80% for genuine class and 67% for fraudulent class.
+            F1-score equals 75% for the genuine class and 72% for the fraudulent class.
+
 
 8. Conclusions:
 
