@@ -91,7 +91,7 @@ These three files are responsible by the following:
 
 5. Data balancing:
 
-    The imbalanced datasets are a intrinsic characteristic of the problem of credit card fraud detection. One can see that the fraud dataset is highly imbalanced. The issue presents much more legitimate transactions than fraudulent transactions. It is not different in this case, so we must use a technique to balance the data. It was used under-sampling and upper-sampling techniques. After the under-sampling process, the remaining data has over 10 thousand legitimate and fraudulent transactions and after the upper-sampling the amount of data is over than 420 thousand legitimate and fraudulent transactions.
+    The imbalanced datasets are a intrinsic characteristic of the problem of credit card fraud detection. One can see that the fraud dataset is highly imbalanced. The issue presents much more legitimate transactions than fraudulent transactions. It is not different in this case, so we must use a technique to balance the data. It was used under-sampling and upper-sampling techniques. After the under-sampling process, the remaining data has over 10 thousand legitimate and fraudulent transactions and after the upper-sampling method the amount of data is over than 420 thousand legitimate and fraudulent transactions.
 
 6. Feature Selection:
 
