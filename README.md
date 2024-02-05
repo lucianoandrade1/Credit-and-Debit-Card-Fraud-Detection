@@ -7,10 +7,6 @@
 
 ## Introduction  <a class="anchor" id="introduction"></a>
 
-- [Credit and Debit Card Fraud Detection EDA](Credit-Card-Fraud-Detection-EDA.ipynb)
-- [Credit and Debit Card Fraud Detection Feature Engineering](Credit-Card-Fraud-Detection-Feature-Enginnering.ipynb)
-- [Credit and Debit Card Fraud Detection Modeling](Credit-Card-Fraud-Detection-Modeling.ipynb)
-
 **The Problem area**: Credit card fraud occurs when a customer uses a third party's credit card or information to make unauthorized purchases or cash advances. Credit card fraud happens both online and in physical stores. Merchants can avoid problems and bad reputations when they identify fraudulent use of credit cards in their payment environment. Credit card fraud detection is critical for companies to safeguard their customers' purchases and funds by detecting fraud before or as it occurs.
 
 It's not always straightforward to agree on what fraud means. Regardless of how you define fraud, most payments are not fraudulent. Most merchants aren't experts at estimating the business impact of fraud.
@@ -54,6 +50,14 @@ The [Data](https://www.kaggle.com/competitions/ieee-fraud-detection/data) will b
 ![Project Flowchart](CapstoneProjectStages.png)
 
 ## Project Organization   <a class="anchor" id="projectorg"></a>
+
+The project is organized in three files:
+
+- [Credit and Debit Card Fraud Detection EDA](Credit-Card-Fraud-Detection-EDA.ipynb)
+- [Credit and Debit Card Fraud Detection Feature Engineering](Credit-Card-Fraud-Detection-Feature-Enginnering.ipynb)
+- [Credit and Debit Card Fraud Detection Modeling](Credit-Card-Fraud-Detection-Modeling.ipynb)
+
+These three files are resposible by the:
 
 1. Exploratory data analysis:
 
