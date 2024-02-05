@@ -64,11 +64,12 @@ These three files are responsible by the following:
     Using Altair visualization package, the project exploratory data analysis (EDA) was employed to analyze and investigate the fraud data set and summarize its main characteristics. It will help to determine how best to manipulate data sources to get the necessary answers, making it possible to discover patterns, spot anomalies, or check assumptions. The EDA step was used to see what data can reveal beyond the formal modeling or hypothesis testing task and provide a better understanding of data set variables and their relationships. It will also assist in determining if the statistical techniques I have to consider for data analysis to be appropriate.
     The primary purpose of the following EDA is to help look at data before making any assumptions. It can help identify apparent errors, better understand patterns within the data, detect outliers or abnormal events, and find exciting relations among the variables. Once this EDA is complete and insights are drawn, its features can be used for ML classification modeling.
 
-    Nine visualizations were designed during the exploratoty data analysis:
+    Ten visualizations were designed during the exploratoty data analysis:
 
         - Total amount purchase per month;
         - Total count of transactions;
         - Product transaction distribution;
+        - Products and services boxplot;
         - Cards brands distribution;
         - Cards Types distribution;
         - Cards brands distribution by transaction type;
@@ -78,7 +79,7 @@ These three files are responsible by the following:
 
 2. Handling Missing Values:
 
-    The dataset under analysis has 394 fields with relevant information about card transactions (purchases). Unfortunately, several fields are formed by thousands of missing values. So far, the strategy chosen to deal with the missing values is to drop them. Fortunately, the remaining fields are far enough to continue the analysis and to perform data balance and ML classification.
+    The dataset under analysis has 394 fields with relevant information about card transactions (purchases). Unfortunately, several fields are formed by thousands of missing values. The strategy chosen to deal with the missing values is to drop them. Fortunately, the remaining fields are far enough to continue the analysis and to perform data balance and ML classification.
 
 3. Features correlation:
 
@@ -90,7 +91,7 @@ These three files are responsible by the following:
 
 5. Data balancing:
 
-    The imbalanced datasets are a intrinsic characteristic of the problem of credit card fraud detection. One can see that the fraud dataset is highly imbalanced. The issue presents much more legitimate transactions than fraudulent transactions. It is not different in this case, so we must use a technique to balance the data. As the quantity of data is enough, one can use the under-sampling technique. After this process, the remaining data has over 10 thousand legitimate and fraudulent transactions.
+    The imbalanced datasets are a intrinsic characteristic of the problem of credit card fraud detection. One can see that the fraud dataset is highly imbalanced. The issue presents much more legitimate transactions than fraudulent transactions. It is not different in this case, so we must use a technique to balance the data. I was used under-sampling and upper-sampling techniques. After the under-sampling process, the remaining data has over 10 thousand legitimate and fraudulent transactions and after the upper-sampling the amount of data is over than 420 thousand legitimate and fraudulent transactions.
 
 6. Feature Selection:
 
