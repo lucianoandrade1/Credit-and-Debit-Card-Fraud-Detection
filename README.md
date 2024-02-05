@@ -139,7 +139,7 @@ These three files are responsible by the following:
             Recall equals 81% for genuine class and 64% for fraudulent class.
             F1-score equals 74% for the genuine class and 70% for the fraudulent class.
 
-    - Artificial Neural Networks:
+    - Artificial Neural Networks models:
 
             The ANN performance was:
 
