@@ -105,7 +105,7 @@ These three files are responsible by the following:
 
     - Decision Trees models:
 
-        The Decision Trees performance was:
+            The Decision Trees performance was:
 
             Accuracy equals to 74%.
             Precision equals 72% for legitimate class and 77% for fraudulent class.
@@ -152,7 +152,8 @@ These three files are responsible by the following:
 
     - Decision Trees models:
 
-        The Decisioon Trees performance was:
+            The Decisioon Trees performance was:
+
             Accuracy equals to 86%.
             Precision equals 84% for the legitimate class and 88% for the fraudulent class.
             Recall equals 89% for genuine class and 83% for fraudulent class.
@@ -160,7 +161,7 @@ These three files are responsible by the following:
 
     - Random Forests models:
 
-        The Random Forest performance was:
+            The Random Forest performance was:
 
             Accuracy equals to 80%.
             Precision equals 77% for the legitimate class and 83% for the fraudulent class.
@@ -169,7 +170,7 @@ These three files are responsible by the following:
 
     - AdaBoost model:
 
-        The Adaboost performance was:
+            The Adaboost performance was:
 
             Accuracy equals to 99%.
             Precision equals 98% for the legitimate class and 99% for the fraudulent class.
@@ -178,7 +179,7 @@ These three files are responsible by the following:
 
     - Suport Vector Machines models:
 
-        The Support Vector Machines performance was:
+            The Support Vector Machines performance was:
 
             Accuracy equals to xx%.
             Precision equals xx% for the legitimate class and xx% for the fraudulent class.
@@ -187,7 +188,7 @@ These three files are responsible by the following:
 
     - Artificial Neural Networks models:
 
-        The ANN performance was:
+            The ANN performance was:
 
             Accuracy equals to 81%.
             Precision equals 78% for the legitimate class and 84% for the fraudulent class.
