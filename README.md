@@ -130,7 +130,7 @@ These three files are responsible by the following:
             Recall equals 78% for genuine class and 79% for fraudulent class.
             F1-score equals 78% for the genuine class and 78% for the fraudulent class.
 
-  - Suport Vector Machines models:
+    - Suport Vector Machines models:
 
             The Support Vector Machines performance was:
 
