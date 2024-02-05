@@ -57,7 +57,7 @@ The project is organized in three files:
 - [Credit and Debit Card Fraud Detection Feature Engineering](Credit-Card-Fraud-Detection-Feature-Enginnering.ipynb)
 - [Credit and Debit Card Fraud Detection Modeling](Credit-Card-Fraud-Detection-Modeling.ipynb)
 
-These three files are resposible by the:
+These three files are responsible by the following:
 
 1. Exploratory data analysis:
 
