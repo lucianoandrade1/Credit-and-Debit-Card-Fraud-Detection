@@ -99,7 +99,9 @@ These three files are responsible by the following:
 
 7. Fraud Classification:
 
-    This project section presents the models for advanced modeling. One can see the performance of four models: Decision Trees, Random Forests, Adaboost, Support Vector Machines, and Artificial Neural Networks. A feature selection is set for all models using a recursive feature elimination with cross-validation based on the Random Forests classifier. Next, a pipeline is designed with these steps: feature selection, feature scaling, model hyperparameters optimization, and training. To articulate a model evaluation, a performance metric report for each model is presented with accuracy, precision, recall, and f1-score.
+    This project section presents the models for advanced modeling. One can see the performance of five models: Decision Trees, Random Forests, Adaboost, Support Vector Machines, and Artificial Neural Networks. A feature selection is set for all models using a recursive feature elimination with cross-validation based on the Random Forests classifier. Next, a pipeline is designed with these steps: feature selection, feature scaling, model hyperparameters optimization, and training. To articulate a model evaluation, a performance metric report for each model is presented with accuracy, precision, recall, and f1-score.
+
+    Models performance after under-sampling balance technique:
 
     - Decision Trees models:
 
@@ -119,15 +121,6 @@ These three files are responsible by the following:
             Recall equals 79% for genuine class and 65% for fraudulent class.
             F1-score equals 74% for the genuine class and 70% for the fraudulent class.
 
-    - Suport Vector Machines models:
-
-            The Support Vector Machines performance was:
-
-            Accuracy equals to 72%.
-            Precision equals 69% for the legitimate class and 77% for the fraudulent class.
-            Recall equals 81% for genuine class and 64% for fraudulent class.
-            F1-score equals 74% for the genuine class and 70% for the fraudulent class.
-
     - AdaBoost model:
 
             The Adaboost performance was:
@@ -136,6 +129,15 @@ These three files are responsible by the following:
             Precision equals 78% for the legitimate class and 78% for the fraudulent class.
             Recall equals 78% for genuine class and 79% for fraudulent class.
             F1-score equals 78% for the genuine class and 78% for the fraudulent class.
+
+  - Suport Vector Machines models:
+
+            The Support Vector Machines performance was:
+
+            Accuracy equals to 72%.
+            Precision equals 69% for the legitimate class and 77% for the fraudulent class.
+            Recall equals 81% for genuine class and 64% for fraudulent class.
+            F1-score equals 74% for the genuine class and 70% for the fraudulent class.
 
     - Artificial Neural Networks:
 
@@ -146,6 +148,51 @@ These three files are responsible by the following:
             Recall equals 80% for genuine class and 67% for fraudulent class.
             F1-score equals 75% for the genuine class and 72% for the fraudulent class.
 
+    Models performance after upper-sampling balance technique:
+
+    - Decision Trees models:
+
+        The Decisioon Trees performance was:
+            Accuracy equals to 86%.
+            Precision equals 84% for the legitimate class and 88% for the fraudulent class.
+            Recall equals 89% for genuine class and 83% for fraudulent class.
+            F1-score equals 86% for the genuine class and 85% for the fraudulent class.
+
+    - Random Forests models:
+
+        The Random Forest performance was:
+
+            Accuracy equals to 80%.
+            Precision equals 77% for the legitimate class and 83% for the fraudulent class.
+            Recall equals 84% for genuine class and 75% for fraudulent class.
+            F1-score equals 81% for the genuine class and 79% for the fraudulent class.
+
+    - AdaBoost model:
+
+        The Adaboost performance was:
+
+            Accuracy equals to 99%.
+            Precision equals 98% for the legitimate class and 99% for the fraudulent class.
+            Recall equals 99% for genuine class and 98% for fraudulent class.
+            F1-score equals 99% for the genuine class and 98% for the fraudulent class.
+
+    - Suport Vector Machines models:
+
+        The Support Vector Machines performance was:
+
+            Accuracy equals to xx%.
+            Precision equals xx% for the legitimate class and xx% for the fraudulent class.
+            Recall equals xx% for genuine class and xx% for fraudulent class.
+            F1-score equals xx% for the genuine class and xx% for the fraudulent class.
+
+    - Artificial Neural Networks:
+
+        The ANN performance was:
+
+            Accuracy equals to 81%.
+            Precision equals 78% for the legitimate class and 84% for the fraudulent class.
+            Recall equals 85% for genuine class and 76% for fraudulent class.
+            F1-score equals 82% for the genuine class and 80% for the fraudulent class.            
 
 8. Conclusions:
 
